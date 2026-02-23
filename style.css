@@ -346,7 +346,7 @@ body.wheel-page .container {
   transform: translateX(-50%);
 
   font-size: 48px;
-  color: #ff4f81;
+  color: #000000;
 
   z-index: 10;   /* ⭐ KEY LINE — puts it in front */
 }
