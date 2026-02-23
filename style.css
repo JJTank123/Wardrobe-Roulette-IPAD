@@ -329,6 +329,8 @@ body.wheel-page .container {
   filter: drop-shadow(0 0 25px rgba(255,255,255,0.6));
   border-radius: 50%;
   transition: transform 0.1s linear;
+    position: relative;
+  z-index: 1;
 }
 
 
@@ -340,19 +342,13 @@ body.wheel-page .container {
 #stopper {
   position: absolute;
   top: -30px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
 
-  width: fit-content;
   font-size: 48px;
   color: #ff4f81;
 
-  text-shadow:
-    0 0 10px white,
-    0 0 20px white;
-
-  animation: bounce 1s infinite alternate;
+  z-index: 10;   /* ⭐ KEY LINE — puts it in front */
 }
 
 
